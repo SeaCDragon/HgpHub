@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
+=======
+ruby '2.4.4'
+>>>>>>> 56b8a603fe48b9e8613dadced0d6e524d2c3b683
 gem 'rails',        '5.1.4'
 gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
