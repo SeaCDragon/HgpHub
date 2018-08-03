@@ -27,9 +27,10 @@ textarea {
 
 .center {
   text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+}
+
+.center h1 {
+  margin-bottom: 10px;
 }
 
 /* typography */
@@ -51,7 +52,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #777;
 }
 
 p {
@@ -59,22 +60,34 @@ p {
   line-height: 1.7em;
 }
 
-
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
+}
+
+#logo:hover {
+  color: #FFF20C;
+  text-decoration: none;
+}
+
+#student_sign_up {
+  color: #000000;
+  background-color: #FFF20C;
+  margin: 10px;
+}
+
+#teacher_sign_up {
+  color: #FFF20C;
+  background-color: #000000;
+  margin: 10px;
 }
 
 /* footer */
@@ -82,35 +95,30 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  border-top: 1px solid #eaeaea;
+  color: #777;
 }
 
-/* miscellaneous */
+footer a {
+  color: #555;
+}
 
-.debug_dump {
-  clear: both;
+footer a:hover {
+  color: #222;
+}
+
+footer small {
   float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
 }
 
 /* sidebar */
@@ -176,4 +184,13 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
